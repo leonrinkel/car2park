@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="400dp"
+    android:height="900dp"
+    android:viewportWidth="4000"
+    android:viewportHeight="9000">
+
+    <!--
+        Map is divided in 4 x 9 squares of 1m x 1m each. <group android:name="section_3-4_5-6" ...
+        includes path data for the section from 3m to 4m in width and 5m to 6m in height.
+        The coordinate system has it's origin in the upper left corner.
+    -->
+
+    <group
+        android:name="section_0-2_0-2">
+        <path
+            android:fillColor="@color/mapRoadBackground"
+            android:pathData="M0,0 L2000,0 L2000,2000 L0,2000 z" />
+        <path
+            android:strokeColor="@color/mapRoadLaneMarks"
+            android:strokeWidth="30"
+            android:pathData="M985,2000 A985,985,0,0,1,2000,985" />
+        <path
+            android:strokeColor="@color/mapRoadLaneMarks"
+            android:strokeWidth="30"
+            android:pathData="M15,2000 A1985,1985,0,0,1,2000,15" />
+    </group>
+
+    <group
+        android:name="section_2-4_0-2"
+        android:translateX="2000">
+        <path
+            android:fillColor="@color/mapRoadBackground"
+            android:pathData="M0,0 L2000,0 L2000,2000 L0,2000 z" />
+        <path
+            android:strokeColor="@color/mapRoadLaneMarks"
+            android:strokeWidth="30"
+            android:pathData="M0,985 A985,985,0,0,1,1015,2000" />
+        <path
+            android:strokeColor="@color/mapRoadLaneMarks"
+            android:strokeWidth="30"
+            android:pathData="M0,15 A1985,1985,0,0,1,1985,2000" />
+    </group>
+
+    <group
+        android:name="section_3-4_2-3"
+        android:translateX="3000"
+        android:translateY="2000">
+        <path
+            android:fillColor="@color/mapRoadBackground"
+            android:pathData="M0,0 L1000,0 L1000,1000 L0,1000 z" />
+        <path
+            android:strokeColor="@color/mapRoadLaneMarks"
+            android:strokeWidth="30"
+            android:pathData="M985,0 L985,1000" />
+        <!--path
+            android:name="upperCenterLaneMark"
+            android:strokeColor="@color/mapRoadLaneMarks"
+            android:strokeWidth="20"
+            android:pathData="M490,102 l0,298" /-->
+        <!--path
+            android:name="lowerCenterLaneMark"
+            android:strokeColor="@color/mapRoadLaneMarks"
+            android:strokeWidth="20"
+            android:pathData="M490,600 l0,298" /-->
+    </group>
+
+    <group
+        android:name="section_2-3_2-3"
+        android:translateX="2000"
+        android:translateY="2000">
+        <path
+            android:fillColor="@color/mapRoadBackground"
+            android:pathData="M0,0 L1000,0 L1000,1000 L0,1000 z" />
+        <path
+            android:strokeColor="@color/mapRoadLaneMarks"
+            android:strokeWidth="30"
+            android:pathData="M1000,15 L0,15 M1000,985 L0,985 M15,0 L15,1000" />
+        <group
+            android:scaleX="5"
+            android:scaleY="5"
+            android:translateX="400"
+            android:translateY="350">
+            <path
+                android:name="parkingSpace0"
+                android:strokeColor="@color/mapRoadLaneMarks"
+                android:fillColor="@color/mapRoadLaneMarks"
+                android:pathData="M 26.123 43.263 L 9.375 43.263 L 9.375 71.095 L 0 71.095 L 0 0.001 L 26.221 0.001 A 36.837 36.837 0 0 1 33.608 0.697 Q 38.081 1.613 41.532 3.735 A 20.433 20.433 0 0 1 44.507 5.958 A 19.686 19.686 0 0 1 51.032 19.482 A 27.227 27.227 0 0 1 51.123 21.729 A 26.474 26.474 0 0 1 50.359 28.284 A 17.94 17.94 0 0 1 44.653 37.672 Q 38.184 43.263 26.123 43.263 Z M 9.375 7.716 L 9.375 35.597 L 26.221 35.597 A 25.697 25.697 0 0 0 30.577 35.251 Q 32.991 34.835 34.908 33.919 A 12.186 12.186 0 0 0 37.744 32.057 A 11.421 11.421 0 0 0 41.275 26.054 Q 41.733 24.187 41.748 21.97 A 22.185 22.185 0 0 0 41.748 21.827 A 16.288 16.288 0 0 0 41.149 17.297 A 12.353 12.353 0 0 0 37.744 11.671 Q 33.862 7.978 27.181 7.728 A 25.703 25.703 0 0 0 26.758 7.716 L 9.375 7.716 Z" />
+        </group>
+    </group>
+
+    <group
+        android:name="section_2-3_3-4"
+        android:translateX="2000"
+        android:translateY="3000">
+        <path
+            android:fillColor="@color/mapRoadBackground"
+            android:pathData="M0,0 L1000,0 L1000,1000 L0,1000 z" />
+        <path
+            android:strokeColor="@color/mapRoadLaneMarks"
+            android:strokeWidth="30"
+            android:pathData="M1000,15 L0,15 M1000,985 L0,985 M15,0 L15,1000" />
+        <group
+            android:scaleX="5"
+            android:scaleY="5"
+            android:translateX="400"
+            android:translateY="350">
+            <path
+                android:name="parkingSpace1"
+                android:strokeColor="@color/mapRoadLaneMarks"
+                android:fillColor="@color/mapRoadLaneMarks"
+                android:pathData="M 26.123 43.263 L 9.375 43.263 L 9.375 71.095 L 0 71.095 L 0 0.001 L 26.221 0.001 A 36.837 36.837 0 0 1 33.608 0.697 Q 38.081 1.613 41.532 3.735 A 20.433 20.433 0 0 1 44.507 5.958 A 19.686 19.686 0 0 1 51.032 19.482 A 27.227 27.227 0 0 1 51.123 21.729 A 26.474 26.474 0 0 1 50.359 28.284 A 17.94 17.94 0 0 1 44.653 37.672 Q 38.184 43.263 26.123 43.263 Z M 9.375 7.716 L 9.375 35.597 L 26.221 35.597 A 25.697 25.697 0 0 0 30.577 35.251 Q 32.991 34.835 34.908 33.919 A 12.186 12.186 0 0 0 37.744 32.057 A 11.421 11.421 0 0 0 41.275 26.054 Q 41.733 24.187 41.748 21.97 A 22.185 22.185 0 0 0 41.748 21.827 A 16.288 16.288 0 0 0 41.149 17.297 A 12.353 12.353 0 0 0 37.744 11.671 Q 33.862 7.978 27.181 7.728 A 25.703 25.703 0 0 0 26.758 7.716 L 9.375 7.716 Z" />
+        </group>
+    </group>
+
+    <group
+        android:name="section_2-3_6-7"
+        android:translateX="2000"
+        android:translateY="6000">
+        <path
+            android:fillColor="@color/mapRoadBackground"
+            android:pathData="M0,0 L1000,0 L1000,1000 L0,1000 z" />
+        <path
+            android:strokeColor="@color/mapRoadLaneMarks"
+            android:strokeWidth="30"
+            android:pathData="M1000,15 L0,15 M1000,985 L0,985 M985,0 L985,1000" />
+        <group
+            android:scaleX="5"
+            android:scaleY="5"
+            android:translateX="400"
+            android:translateY="350">
+            <path
+                android:name="parkingSpace2"
+                android:strokeColor="@color/mapRoadLaneMarks"
+                android:fillColor="@color/mapRoadLaneMarks"
+                android:pathData="M 26.123 43.263 L 9.375 43.263 L 9.375 71.095 L 0 71.095 L 0 0.001 L 26.221 0.001 A 36.837 36.837 0 0 1 33.608 0.697 Q 38.081 1.613 41.532 3.735 A 20.433 20.433 0 0 1 44.507 5.958 A 19.686 19.686 0 0 1 51.032 19.482 A 27.227 27.227 0 0 1 51.123 21.729 A 26.474 26.474 0 0 1 50.359 28.284 A 17.94 17.94 0 0 1 44.653 37.672 Q 38.184 43.263 26.123 43.263 Z M 9.375 7.716 L 9.375 35.597 L 26.221 35.597 A 25.697 25.697 0 0 0 30.577 35.251 Q 32.991 34.835 34.908 33.919 A 12.186 12.186 0 0 0 37.744 32.057 A 11.421 11.421 0 0 0 41.275 26.054 Q 41.733 24.187 41.748 21.97 A 22.185 22.185 0 0 0 41.748 21.827 A 16.288 16.288 0 0 0 41.149 17.297 A 12.353 12.353 0 0 0 37.744 11.671 Q 33.862 7.978 27.181 7.728 A 25.703 25.703 0 0 0 26.758 7.716 L 9.375 7.716 Z" />
+        </group>
+    </group>
+
+    <group
+        android:name="section_3-4_3-4"
+        android:translateX="3000"
+        android:translateY="3000">
+        <path
+            android:fillColor="@color/mapRoadBackground"
+            android:pathData="M0,0 L1000,0 L1000,1000 L0,1000 z" />
+        <path
+            android:strokeColor="@color/mapRoadLaneMarks"
+            android:strokeWidth="30"
+            android:pathData="M985,0 L985,1000" />
+        <!--path
+            android:strokeColor="@color/mapRoadLaneMarks"
+            android:strokeWidth="20"
+            android:pathData="M490,102 l0,298" /-->
+        <!--path
+            android:strokeColor="@color/mapRoadLaneMarks"
+            android:strokeWidth="20"
+            android:pathData="M490,600 l0,298" /-->
+    </group>
+
+    <group
+        android:name="section_3-4_4-5"
+        android:translateX="3000"
+        android:translateY="4000">
+        <path
+            android:fillColor="@color/mapRoadBackground"
+            android:pathData="M0,0 L1000,0 L1000,1000 L0,1000 z" />
+        <path
+            android:strokeColor="@color/mapRoadLaneMarks"
+            android:strokeWidth="30"
+            android:pathData="M15,0 L15,1000" />
+        <path
+            android:strokeColor="@color/mapRoadLaneMarks"
+            android:strokeWidth="30"
+            android:pathData="M985,0 L985,1000" />
+        <!--path
+            android:strokeColor="@color/mapRoadLaneMarks"
+            android:strokeWidth="20"
+            android:pathData="M490,102 l0,298" /-->
+        <!--path
+            android:strokeColor="@color/mapRoadLaneMarks"
+            android:strokeWidth="20"
+            android:pathData="M490,600 l0,298" /-->
+        <!--path
+            android:strokeColor="@color/mapRoadLaneMarks"
+            android:strokeWidth="50"
+            android:pathData="M30,975 l460,0" /-->
+    </group>
+
+    <group
+        android:name="section_3-4_5-6"
+        android:translateX="3000"
+        android:translateY="5000">
+        <path
+            android:fillColor="@color/mapRoadBackground"
+            android:pathData="M0,0 L1000,0 L1000,1000 L0,1000 z" />
+        <path
+            android:strokeColor="@color/mapRoadLaneMarks"
+            android:strokeWidth="30"
+            android:pathData="M985,0 L985,1000" />
+    </group>
+
+    <group
+        android:name="section_3-4_6-7"
+        android:translateX="3000"
+        android:translateY="6000">
+        <path
+            android:fillColor="@color/mapRoadBackground"
+            android:pathData="M0,0 L1000,0 L1000,1000 L0,1000 z" />
+        <path
+            android:strokeColor="@color/mapRoadLaneMarks"
+            android:strokeWidth="30"
+            android:pathData="M15,0 L15,1000" />
+        <path
+            android:strokeColor="@color/mapRoadLaneMarks"
+            android:strokeWidth="30"
+            android:pathData="M985,0 L985,1000" />
+        <!--path
+            android:strokeColor="@color/mapRoadLaneMarks"
+            android:strokeWidth="20"
+            android:pathData="M490,102 l0,298" /-->
+        <!--path
+            android:strokeColor="@color/mapRoadLaneMarks"
+            android:strokeWidth="20"
+            android:pathData="M490,600 l0,298" /-->
+        <!--path
+            android:strokeColor="@color/mapRoadLaneMarks"
+            android:strokeWidth="50"
+            android:pathData="M510,25 l460,0" /-->
+    </group>
+
+    <group
+        android:name="section_1-2_6-7"
+        android:translateX="1000"
+        android:translateY="6000">
+        <path
+            android:fillColor="@color/mapRoadBackground"
+            android:pathData="M0,0 L1000,0 L1000,1000 L0,1000 z" />
+        <path
+            android:strokeColor="@color/mapRoadLaneMarks"
+            android:strokeWidth="30"
+            android:pathData="M15,0 L15,1000" />
+        <!--path
+            android:strokeColor="@color/mapRoadLaneMarks"
+            android:strokeWidth="20"
+            android:pathData="M490,102 l0,298" /-->
+        <!--path
+            android:strokeColor="@color/mapRoadLaneMarks"
+            android:strokeWidth="20"
+            android:pathData="M490,600 l0,298" /-->
+        <!--path
+            android:strokeColor="@color/mapRoadLaneMarks"
+            android:strokeWidth="50"
+            android:pathData="M510,25 l460,0" /-->
+    </group>
+
+    <group
+        android:name="section_2-3_5-6"
+        android:translateX="2000"
+        android:translateY="5000">
+        <path
+            android:fillColor="@color/mapRoadBackground"
+            android:pathData="M0,0 L1000,0 L1000,1000 L0,1000 z" />
+        <path
+            android:strokeColor="@color/mapRoadLaneMarks"
+            android:strokeWidth="30"
+            android:pathData="M0,15 L1000,15" />
+        <path
+            android:strokeColor="@color/mapRoadLaneMarks"
+            android:strokeWidth="30"
+            android:pathData="M0,985 L1000,985" />
+        <!--path
+            android:strokeColor="@color/mapRoadLaneMarks"
+            android:strokeWidth="20"
+            android:pathData="M102,490 l298,0" /-->
+        <!--path
+            android:strokeColor="@color/mapRoadLaneMarks"
+            android:strokeWidth="20"
+            android:pathData="M600,490 l298,0" /-->
+        <!--path
+            android:strokeColor="@color/mapRoadLaneMarks"
+            android:strokeWidth="50"
+            android:pathData="M25,30 l0,460" /-->
+        <!--path
+            android:strokeColor="@color/mapRoadLaneMarks"
+            android:strokeWidth="50"
+            android:pathData="M975,510 l0,460" /-->
+    </group>
+
+    <group
+        android:name="section_1-4_7-9"
+        android:translateX="1000"
+        android:translateY="7000">
+        <path
+            android:fillColor="@color/mapRoadBackground"
+            android:pathData="M0,0 L3000,0 L3000,2000 L0,2000 z" />
+        <path
+            android:strokeColor="@color/mapRoadLaneMarks"
+            android:strokeWidth="30"
+            android:pathData="M2015,0 L2015,500" />
+        <path
+            android:strokeColor="@color/mapRoadLaneMarks"
+            android:strokeWidth="30"
+            android:pathData="M2985,0 L2985,500" />
+        <path
+            android:strokeColor="@color/mapRoadLaneMarks"
+            android:strokeWidth="30"
+            android:pathData="M15,0 L15,500" />
+        <path
+            android:strokeColor="@color/mapRoadLaneMarks"
+            android:strokeWidth="30"
+            android:pathData="M985,0 L985,500" />
+        <path
+            android:strokeColor="@color/mapRoadLaneMarks"
+            android:strokeWidth="30"
+            android:pathData="M2015,500 A515,515,0,0,1,985,500" />
+        <path
+            android:strokeColor="@color/mapRoadLaneMarks"
+            android:strokeWidth="30"
+            android:pathData="M2985,500 A1445,1445,0,0,1,15,500" />
+    </group>
+
+    <group
+        android:name="section_1-2_5-6"
+        android:translateX="1000"
+        android:translateY="5000">
+        <path
+            android:fillColor="@color/mapRoadBackground"
+            android:pathData="M0,0 L1000,0 L1000,1000 L0,1000 z" />
+        <path
+            android:strokeColor="@color/mapRoadLaneMarks"
+            android:strokeWidth="30"
+            android:pathData="M15,0 L15,1000" />
+    </group>
+
+    <group
+        android:name="section_0-2_2-5"
+        android:translateY="2000">
+        <path
+            android:fillColor="@color/mapRoadBackground"
+            android:pathData="M0,0 L2000,0 L2000,3000 L0,3000 z" />
+        <path
+            android:strokeColor="@color/mapRoadLaneMarks"
+            android:strokeWidth="30"
+            android:pathData="M15,0 C15,1000 1025,2000 1015,3000" />
+        <path
+            android:strokeColor="@color/mapRoadLaneMarks"
+            android:strokeWidth="30"
+            android:pathData="M985,0 C985,1000 1985,2000 1985,3000" />
+    </group>
+
+</vector>
